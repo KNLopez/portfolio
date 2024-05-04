@@ -37,10 +37,14 @@ export default function Home() {
             <p className="text-lg mb-4 uppercase font-bold tracking-wider ">
               Senior Frontend Engineer
             </p>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm mb-2">
               I&apos;m a Senior Frontend Engineer from the Philippines with over
               9 years of experience in building beautiful UI. I specialize in
               React, Next.js, and Typescript.
+            </p>
+            <p className="text-gray-400 text-sm">
+              When I&apos;m not coding, I enjoy playing video games, watching
+              movies, and traveling.
             </p>
             <div className="mt-4 text-sm">
               <span>
@@ -67,7 +71,7 @@ export default function Home() {
             <Menu />
           </div>
         </div>
-        <div className="flex flex-col gap-16 flex-1 z-20 relative">
+        <div className="flex flex-col gap-2 flex-1 z-20 relative">
           <Section
             title={"Experience"}
             data={experience}
