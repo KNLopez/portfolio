@@ -23,7 +23,7 @@ const Menu = ({}) => {
           ? hash === item.path
           : item.path === "#Experience";
         return (
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3" key={item.path}>
             <div
               className={`rounded-xl  h-[2px] transition-all ${
                 isActive ? "bg-white w-5" : "bg-zinc-400 w-2"

@@ -79,6 +79,7 @@ const Experience = ({
         >
           {tech.map((t) => (
             <li
+              key={t}
               className="
                 bg-zinc-700
                 text-zinc-400

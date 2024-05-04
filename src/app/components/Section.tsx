@@ -23,6 +23,7 @@ const Section = ({
       <div className="flex flex-col gap-2">
         {data.map((item: any) => (
           <div
+            key={item.title}
             onMouseEnter={() => {
               setSelected(item[identifier]);
             }}

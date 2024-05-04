@@ -38,8 +38,8 @@ export default function Home() {
               Senior Frontend Engineer
             </p>
             <p className="text-gray-400">
-              I'm a Senior Frontend Engineer from the Philippines with over 9
-              years of experience in building beautiful UI. I specialize in
+              I&apos;m a Senior Frontend Engineer from the Philippines with over
+              9 years of experience in building beautiful UI. I specialize in
               React, Next.js, and Typescript.
             </p>
             <div className="mt-4 text-xs">
