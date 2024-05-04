@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
 type SectionProps = {
   title: string;
   selected: string;
@@ -15,9 +19,25 @@ const Section = ({
   Child,
   identifier,
 }: SectionProps) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (ref.current === null) return;
+    // check if on screen then change the hash
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          window.location.hash = title;
+        }
+      });
+    });
+
+    observer.observe(ref.current);
+  }, []);
+
   return (
     <div>
-      <h3 className="text-3xl font-bold mb-4" id={title}>
+      <h3 className="text-3xl font-bold mb-4" id={title} ref={ref}>
         {title}
       </h3>
       <div className="flex flex-col gap-2">
