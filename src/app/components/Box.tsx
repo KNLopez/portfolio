@@ -13,7 +13,7 @@ const Box = ({ children, id, selected }: BoxProps) => {
        transition-all
        
        hover:scale-110
-       ${selected === id || selected === "" ? "opacity-100" : "opacity-50"}
+       lg:${selected === id || selected === "" ? "opacity-100" : "opacity-50"}
     `}
     >
       {children}

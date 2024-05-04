@@ -72,9 +72,11 @@ const Experience = ({
         ></p>
         <ul
           className="
+          w-full
             flex
             gap-2
             mt-4
+            flex-wrap
             "
         >
           {tech.map((t) => (
