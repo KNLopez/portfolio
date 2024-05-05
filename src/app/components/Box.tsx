@@ -14,6 +14,8 @@ const Box = ({ children, id, selected }: BoxProps) => {
        
        lg:hover:scale-110
        lg:${selected === id || selected === "" ? "opacity-100" : "opacity-50"}
+
+       hover:shadow-lg
     `}
     >
       {children}

@@ -27,7 +27,7 @@ const Section = ({
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          window.location.hash = title;
+          window.location.hash = title.toLocaleLowerCase();
         }
       });
     });

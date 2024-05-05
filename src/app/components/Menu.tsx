@@ -19,9 +19,8 @@ const Menu = ({}) => {
   return (
     <div className="flex flex-col gap-2 mt-8">
       {menuItems.map((item) => {
-        const isActive = hash
-          ? hash === item.path
-          : item.path === "#Experience";
+        const isActive = hash === item.path.toLowerCase();
+
         return (
           <div className="flex items-center gap-3" key={item.path}>
             <div

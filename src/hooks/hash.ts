@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const getHash = () =>
   typeof window !== "undefined"
-    ? decodeURIComponent(window.location.hash)
+    ? decodeURIComponent(window.location.hash.toLocaleLowerCase())
     : undefined;
 
 const useHash = () => {
