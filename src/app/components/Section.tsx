@@ -37,7 +37,11 @@ const Section = ({
 
   return (
     <div>
-      <h3 className="text-3xl font-bold mb-4 pt-10" id={title} ref={ref}>
+      <h3
+        className="text-3xl font-bold mb-4 pt-10 capitalize"
+        id={title}
+        ref={ref}
+      >
         {title}
       </h3>
       <div className="flex flex-col gap-2">

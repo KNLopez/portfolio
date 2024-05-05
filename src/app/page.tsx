@@ -73,7 +73,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-2 flex-1 z-20 relative">
           <Section
-            title={"Experience"}
+            title={"experience"}
             data={experience}
             Child={Experience}
             selected={selected}
@@ -81,7 +81,7 @@ export default function Home() {
             identifier={"company"}
           />
           <Section
-            title={"Projects"}
+            title={"projects"}
             data={projects}
             Child={Project}
             selected={selected}

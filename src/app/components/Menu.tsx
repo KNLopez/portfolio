@@ -5,11 +5,11 @@ import { usePathname, useRouter } from "next/navigation";
 const menuItems = [
   {
     label: "Experience",
-    path: "#Experience",
+    path: "#experience",
   },
   {
     label: "Projects",
-    path: "#Projects",
+    path: "#projects",
   },
 ];
 
@@ -19,7 +19,7 @@ const Menu = ({}) => {
   return (
     <div className="flex flex-col gap-2 mt-8">
       {menuItems.map((item) => {
-        const isActive = hash === item.path.toLowerCase();
+        const isActive = hash === item.path;
 
         return (
           <div className="flex items-center gap-3" key={item.path}>
