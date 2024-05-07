@@ -1,6 +1,5 @@
 "use-client";
 import useHash from "@/hooks/hash";
-import { usePathname, useRouter } from "next/navigation";
 
 const menuItems = [
   {

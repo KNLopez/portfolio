@@ -11,6 +11,8 @@ type SectionProps = {
   identifier: string;
 };
 
+let scroll = false;
+
 const Section = ({
   title,
   selected,
@@ -22,17 +24,21 @@ const Section = ({
   const ref = useRef(null);
 
   useEffect(() => {
-    if (ref.current === null) return;
     // check if on screen then change the hash
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          window.location.hash = title.toLocaleLowerCase();
-        }
-      });
-    });
 
-    observer.observe(ref.current);
+    document.addEventListener("scroll", (e) => {
+      if (ref.current === null || scroll) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            window.location.hash = title.toLocaleLowerCase();
+          }
+        });
+      });
+
+      observer.observe(ref.current);
+      scroll = true;
+    });
   }, []);
 
   return (

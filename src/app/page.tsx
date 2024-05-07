@@ -21,7 +21,7 @@ export default function Home() {
     document.addEventListener("mousemove", (e) => {
       const mouseY = e.clientY - halfHeight;
       const mouseX = e.clientX - halfWidth;
-      cursorBG.style.opacity = 0.2;
+      cursorBG.style.opacity = 0.3;
       cursorBG.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     });
   }, []);

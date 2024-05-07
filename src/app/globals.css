@@ -2,13 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-  :root {
-    --foreground-rgb: 230, 230, 230;
-    --background-rgb: 25, 25, 25;
-  }
+:root {
+  --foreground-rgb: 230, 230, 230;
+  --background-rgb: 25, 25, 25;
+}
 
 * {
   scroll-behavior: smooth;
@@ -56,7 +53,7 @@ body {
   background: rgb(255, 255, 255);
   background: radial-gradient(
     circle,
-    rgb(124, 124, 124) 0%,
+    rgb(0, 255, 76) 0%,
     rgba(77, 77, 77, 0.5) 45%,
     rgba(49, 49, 49, 0.2) 75%,
     rgba(0, 0, 0, 0) 98%
