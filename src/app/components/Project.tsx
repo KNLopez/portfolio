@@ -12,7 +12,7 @@ const Project = ({ title, selected, link, description }: ProjectProps) => {
     <Box id={title} selected={selected}>
       <div className="p-6">
         <p className="text-2xl font-bold">{title}</p>
-        <p className="text-zinc-400 mb-4">{description}</p>
+        <p className="text-zinc-400 mb-4 break-words">{description}</p>
         <a
           target="_blank"
           href={link}
