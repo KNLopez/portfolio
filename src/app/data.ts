@@ -1,9 +1,9 @@
 export const projects = [
   {
-    title: "PokeDex",
+    title: "ChatUI",
     description:
-      "A Pokedex app that lets you view Pokemon details and search for Pokemon. Built using React",
-    link: "https://knlopez.github.io/pokedex/",
+      "A UI implementation of https://www.figma.com/proto/U3arKN8rrQY5ChNDEsQSQH/Chat-Web-App-UI-Kit-(Community)",
+    link: "https://main.d3g0he8vvonpt5.amplifyapp.com/",
   },
 ];
 
