@@ -1,9 +1,19 @@
 export const projects = [
   {
+    title: "realestate.com.kh",
+    description: "A real estate platform for Cambodia",
+    link: "https://www.realestate.com.kh/new-developments/search/",
+  },
+  {
     title: "ChatUI",
     description:
       "A UI implementation of https://www.figma.com/proto/U3arKN8rrQY5ChNDEsQSQH/Chat-Web-App-UI-Kit-(Community)",
     link: "https://main.d3g0he8vvonpt5.amplifyapp.com/",
+  },
+  {
+    title: "RPN Calculator",
+    description: "A simple RPN Calculator",
+    link: "https://rpn.vercel.app/",
   },
 ];
 

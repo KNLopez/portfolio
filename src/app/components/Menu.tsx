@@ -3,12 +3,12 @@ import useHash from "@/hooks/hash";
 
 const menuItems = [
   {
-    label: "Experience",
-    path: "#experience",
-  },
-  {
     label: "Projects",
     path: "#projects",
+  },
+  {
+    label: "Experience",
+    path: "#experience",
   },
 ];
 

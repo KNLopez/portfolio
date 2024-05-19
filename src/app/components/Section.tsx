@@ -11,8 +11,6 @@ type SectionProps = {
   identifier: string;
 };
 
-let scroll = false;
-
 const Section = ({
   title,
   selected,
@@ -24,13 +22,17 @@ const Section = ({
   const ref = useRef(null);
 
   useEffect(() => {
+    let scroll = false;
     // check if on screen then change the hash
 
     document.addEventListener("scroll", (e) => {
       if (ref.current === null || scroll) return;
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (
+            entry.boundingClientRect.top < 200 &&
+            entry.boundingClientRect.top > -200
+          ) {
             window.location.hash = title.toLocaleLowerCase();
           }
         });
@@ -39,7 +41,7 @@ const Section = ({
       observer.observe(ref.current);
       scroll = true;
     });
-  }, []);
+  }, [title]);
 
   return (
     <div>
@@ -53,7 +55,7 @@ const Section = ({
       <div className="flex flex-col gap-2">
         {data.map((item: any) => (
           <div
-            key={item.title}
+            key={item.description}
             onMouseEnter={() => {
               setSelected(item[identifier]);
             }}

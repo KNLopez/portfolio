@@ -73,20 +73,20 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-2 flex-1 z-20 relative">
           <Section
-            title={"experience"}
-            data={experience}
-            Child={Experience}
-            selected={selected}
-            setSelected={setSelected}
-            identifier={"company"}
-          />
-          <Section
             title={"projects"}
             data={projects}
             Child={Project}
             selected={selected}
             setSelected={setSelected}
             identifier={"title"}
+          />
+          <Section
+            title={"experience"}
+            data={experience}
+            Child={Experience}
+            selected={selected}
+            setSelected={setSelected}
+            identifier={"company"}
           />
         </div>
       </main>
