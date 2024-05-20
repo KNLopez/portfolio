@@ -11,7 +11,9 @@ const useHash = () => {
 
   useEffect(() => {
     const handleHashChange = () => {
-      setHash(getHash());
+      const hash = getHash();
+      if (hash === undefined) return;
+      setHash(hash);
     };
     window.addEventListener("hashchange", handleHashChange);
     return () => {

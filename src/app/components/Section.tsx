@@ -20,27 +20,35 @@ const Section = ({
   identifier,
 }: SectionProps) => {
   const ref = useRef(null);
+  const isScrolling = useRef(false);
+  const handleScroll = () => {
+    isScrolling.current = true;
+  };
 
   useEffect(() => {
-    let scroll = false;
-    // check if on screen then change the hash
+    window.addEventListener("wheel", handleScroll);
+    //  hanhdle mobile wheel
+    window.addEventListener("touchmove", handleScroll);
 
-    document.addEventListener("scroll", (e) => {
-      if (ref.current === null || scroll) return;
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (
-            entry.boundingClientRect.top < 200 &&
-            entry.boundingClientRect.top > -200
-          ) {
-            window.location.hash = title.toLocaleLowerCase();
-          }
-        });
-      });
-
-      observer.observe(ref.current);
-      scroll = true;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (
+        entry.boundingClientRect &&
+        entry.boundingClientRect.top < 100 &&
+        isScrolling.current
+      ) {
+        location.hash = title;
+        isScrolling.current = false;
+      }
     });
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+      observer.disconnect();
+    };
   }, [title]);
 
   return (

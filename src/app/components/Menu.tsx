@@ -14,6 +14,17 @@ const menuItems = [
 
 const Menu = ({}) => {
   const hash = useHash();
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string
+  ) => {
+    e.preventDefault();
+    const target = document.querySelector(path);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => (window.location.hash = path), 500);
+    }
+  };
 
   return (
     <div className="flex flex-col gap-2 mt-8">
@@ -32,6 +43,9 @@ const Menu = ({}) => {
               className={` flex-1 ${
                 isActive ? "text-white" : "text-zinc-400"
               } :hover:text-white`}
+              onClick={(e) => {
+                handleClick(e, item.path);
+              }}
             >
               {item.label}
             </a>
