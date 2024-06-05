@@ -1,19 +1,31 @@
 export const projects = [
   {
-    title: "realestate.com.kh",
+    title: "Realestate.com.kh",
     description: "A real estate platform for Cambodia",
     link: "https://www.realestate.com.kh/new-developments/search/",
   },
   {
     title: "ChatUI",
     description:
-      "A UI implementation of https://www.figma.com/proto/U3arKN8rrQY5ChNDEsQSQH/Chat-Web-App-UI-Kit-(Community)",
+      "A UI implementation of https://www.figma.com/design/tOSW1y4AO8zZ0yyVc9LowK/Chat-Web-App-UI-Kit-(Community)?node-id=1-4&t=5M0whFt35yDG0SQo-0",
     link: "https://main.d3g0he8vvonpt5.amplifyapp.com/",
   },
   {
-    title: "RPN Calculator",
-    description: "A simple RPN Calculator",
+    title: "Pokedex",
+    description: "A true to form pokedex",
     link: "https://rpn.vercel.app/",
+  },
+  {
+    title: "URL shortener",
+    description:
+      "Simple application that shortens URLs and provides analytics for the shortened URL",
+    link: "https://klopez-shortly.netlify.app/",
+  },
+  {
+    title: "(WIP) Restaurant ordering app",
+    description:
+      "App for local businesses in Iloilo City to implement the QR code ordering system (mobile only)",
+    link: "https://main.d1b4ep2y8qzeg4.amplifyapp.com/",
   },
 ];
 
