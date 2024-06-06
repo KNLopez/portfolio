@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "Pokedex",
     description: "A true to form pokedex",
-    link: "https://rpn.vercel.app/",
+    link: "https://knlopez.github.io/pokedex/",
   },
   {
     title: "URL shortener",
