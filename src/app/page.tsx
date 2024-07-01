@@ -39,12 +39,12 @@ export default function Home() {
             </p>
             <p className="text-gray-300 text-sm mb-2">
               I&apos;m a Senior Frontend Engineer from the Philippines with over
-              9 years of experience in building beautiful UI. I specialize in
-              React, Next.js, and Typescript.
+              9 years of experience.
             </p>
             <p className="text-gray-300 text-sm">
-              When I&apos;m not coding, I enjoy playing video games, watching
-              movies, and traveling.
+              I love optimizing applications for performance and
+              maintainability. I&apos;m also a fan of React, TypeScript, and
+              ThreeJS.
             </p>
             <div className="mt-4 text-sm grid lg:grid-cols-2 gap-4 tracking-wide">
               <span>
