@@ -55,12 +55,12 @@ const Section = ({
     <div>
       <h3
         className="text-3xl font-bold mb-4 pt-10 capitalize"
-        id={title}
+        id={title.split(" ").join("-").toLowerCase()}
         ref={ref}
       >
         {title}
       </h3>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-6">
         {data.map((item: any) => (
           <div
             key={item.description}
@@ -70,6 +70,7 @@ const Section = ({
             onMouseLeave={() => {
               setSelected("");
             }}
+            className="flex-1"
           >
             <Child {...item} selected={selected} />
           </div>

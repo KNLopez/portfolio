@@ -4,7 +4,7 @@ import useHash from "@/hooks/hash";
 const menuItems = [
   {
     label: "Projects",
-    path: "#projects",
+    path: "#featured-projects",
   },
   {
     label: "Experience",
