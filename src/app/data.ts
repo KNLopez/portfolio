@@ -2,39 +2,43 @@ export const projects = [
   {
     video: "/app.mp4",
     title: "Inspect",
-    description: "Asset inspection software",
+    description:
+      "A comprehensive asset inspection software designed to streamline and enhance the inspection process.",
     link: "https://www.screeningeagle.com/en/product/software/workflow",
   },
   {
     image: "realestatekh.png",
     title: "Realestate.com.kh",
-    description: "A real estate platform for Cambodia",
+    description:
+      "The leading real estate platform in Cambodia, offering a wide range of property listings and real estate services.",
     link: "https://www.realestate.com.kh/new-developments/search/",
   },
   {
     image: "enlil.png",
     title: "Enlil.io",
     description:
-      "SaSS platform for medical device companies to manage their documents",
+      "A SaaS platform that enables medical device companies to efficiently manage their documents and compliance requirements.",
     link: "https://enlil.com/",
   },
   {
     image: "chat.png",
     title: "ChatUI",
-    description: "A UI implementation of a figma design for a chat application",
+    description:
+      "A sleek and modern UI implementation of a chat application, based on a Figma design.",
     link: "https://main.d3g0he8vvonpt5.amplifyapp.com/",
   },
   {
     image: "pokedex.png",
     title: "Pokedex",
-    description: "A true to form pokedex",
+    description:
+      "An authentic and interactive Pokedex application, providing detailed information on various Pokemon.",
     link: "https://knlopez.github.io/pokedex/",
   },
   {
     image: "resto.png",
-    title: "(WIP) Restaurant ordering app",
+    title: "(WIP) Restaurant Ordering App",
     description:
-      "App for local businesses in Iloilo City to implement the QR code ordering system (mobile only)",
+      "A work-in-progress app for local businesses in Iloilo City, enabling QR code-based ordering systems (mobile only).",
     link: "https://main.d1b4ep2y8qzeg4.amplifyapp.com/",
   },
 ];
