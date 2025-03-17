@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import Experience from "./components/Experience";
-import { experience, projects } from "./data";
 import Menu from "./components/Menu";
-import Section from "./components/Section";
 import Project from "./components/Project";
+import Section from "./components/Section";
+import { experience, projects } from "./data";
 
 export default function Home() {
   const [selected, setSelected] = useState("");
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <div className="cursor-background fixed z-0" />
-      <main className="flex min-h-screen flex-col justify-between lg:p-36 p-8 container gap-8 lg:flex-row lg:gap-36">
+      <main className="flex min-h-screen flex-col justify-between lg:p-24 p-8 container gap-8 lg:flex-row lg:gap-24">
         <div className="background-container fixed inset-0 z-10" />
         <div className="flex flex-1 flex-col gap-2 w-full z-20 relative">
           <div className="sticky top-36 lg:p-6 rounded">
@@ -46,43 +46,43 @@ export default function Home() {
               maintainability. I&apos;m also a fan of React, TypeScript, and
               ThreeJS.
             </p>
-            <div className="mt-4 text-sm grid lg:grid-cols-2 gap-4 tracking-wide">
-              <span>
-                Email:
+            <div className="mt-4 text-sm grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-4 tracking-wide">
+              <span className="flex items-center">
+                <span className="mr-1">Email:</span>
                 <a
                   target="_blank"
                   href="mailto:kurtdevph@gmail.com"
-                  className="text-zinc-200 hover:text-white underline ml-1 font-semibold"
+                  className="text-zinc-200 hover:text-white underline font-semibold"
                 >
                   kurtdevph@gmail.com
                 </a>
               </span>
-              <span>
-                Phone:
+              <span className="flex items-center">
+                <span className="mr-1">Phone:</span>
                 <a
                   target="_blank"
                   href="tel:+6591733474"
-                  className="text-zinc-200 hover:text-white underline ml-1 font-semibold"
+                  className="text-zinc-200 hover:text-white underline font-semibold"
                 >
                   +6591733474
                 </a>
               </span>
-              <span>
-                Behance:
+              <span className="flex items-center">
+                <span className="mr-1">Behance:</span>
                 <a
                   target="_blank"
                   href="https://www.behance.net/kurtdevph"
-                  className="text-zinc-200 hover:text-white underline ml-1 font-semibold"
+                  className="text-zinc-200 hover:text-white underline font-semibold"
                 >
                   behance.net/kurtdevph
                 </a>
               </span>
-              <span>
-                Codepen:
+              <span className="flex items-center">
+                <span className="mr-1">Codepen:</span>
                 <a
                   target="_blank"
                   href="https://codepen.io/kurtlopez"
-                  className="text-zinc-200 hover:text-white underline ml-1 font-semibold"
+                  className="text-zinc-200 hover:text-white underline font-semibold"
                 >
                   codepen.io/kurtlopez
                 </a>
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-2 flex-1 z-20 relative">
           <Section
-            title={"featured projects"}
+            title={"featured-projects"}
             data={projects}
             Child={Project}
             selected={selected}
